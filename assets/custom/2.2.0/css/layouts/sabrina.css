@@ -1,0 +1,38 @@
+/* Main Photo */
+.photo-01 {
+  background: url("../../images/layouts/sabrina/userpics/sabrina.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 360px; }
+
+/* Timeline */
+.timeline-sabrina-01,
+.timeline-sabrina-02,
+.timeline-sabrina-03,
+.timeline-sabrina-04 {
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.timeline-sabrina-01 {
+  background: url("../../images/layouts/sabrina/timeline/01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-sabrina-02 {
+  background: url("../../images/layouts/sabrina/timeline/02.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-sabrina-03 {
+  background: url("../../images/layouts/sabrina/timeline/03.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-sabrina-04 {
+  background: url("../../images/layouts/sabrina/timeline/04.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/*# sourceMappingURL=sabrina.css.map */
