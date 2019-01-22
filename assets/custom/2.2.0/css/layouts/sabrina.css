@@ -31,7 +31,27 @@
   background-size: cover; }
 
 .timeline-sabrina-04 {
-  background: url("../../images/layouts/sabrina/timeline/04.jpg");
+  background: url("../../images/layouts/sabrina/timeline/04.png");
+  background-position: center;
+  background-size: cover; }
+
+  .timeline-sabrina-05 {
+  background: url("../../images/layouts/sabrina/timeline/05.png");
+  background-position: center;
+  background-size: cover; }
+
+  .timeline-sabrina-06 {
+  background: url("../../images/layouts/sabrina/timeline/06.jpg");
+  background-position: center;
+  background-size: cover; }
+
+  .timeline-sabrina-07 {
+  background: url("../../images/layouts/sabrina/timeline/07.jpg");
+  background-position: center;
+  background-size: cover; }
+
+  .timeline-sabrina-08 {
+  background: url("../../images/layouts/sabrina/timeline/08.jpg");
   background-position: center;
   background-size: cover; }
 
