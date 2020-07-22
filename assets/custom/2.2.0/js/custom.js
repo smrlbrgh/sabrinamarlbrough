@@ -359,7 +359,46 @@
                     // as well as the name to be displayed on the map type control.
                     var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
 
+                    // Create a map object, and include the MapTypeId to add
+                    // to the map type control.
+                    var $latlng = new google.maps.LatLng(52.5075419, 13.4261419),
+                        $mapOptions = {
+                            zoom: 13,
+                            center: $latlng,
+                            panControl: false,
+                            zoomControl: true,
+                            scaleControl: false,
+                            mapTypeControl: false,
+                            scrollwheel: false,
+                            mapTypeControlOptions: {
+                                mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+                            }
+                        };
+                    var map = new google.maps.Map(document.getElementById('google-map'), $mapOptions);
 
+                    google.maps.event.trigger(map, 'resize');
+
+                    //Associate the styled map with the MapTypeId and set it to display.
+                    map.mapTypes.set('map_style', styledMap);
+                    map.setMapTypeId('map_style');
+
+                    var marker = new google.maps.Marker({
+                        position: $latlng,
+                        map: map,
+                        title: ""
+                    });
+
+                };
+
+                if (document.getElementById('gmapSrc')) {
+                    initGmap();
+                }
+
+                // loadScript('http://maps.googleapis.com/maps/api/js?v=AIzaSyBUaDfsFNkYqrj-PD4cTROVyHYqUZm3YKE&callback=initMap');
+            }
+        })();
+
+    }
     /** Load js script to head **/
     function loadScript(src, id) {
         if (document.getElementById(id)) {
