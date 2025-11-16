@@ -1,0 +1,101 @@
+/* Colors */
+.burgundy{
+    --color:#7A2048;
+    --background-color: #7A2048;
+}
+.midnight-blue{
+    --color:#1E2761;
+    --background-color: #1E2761;
+}
+.teal-blue 
+{
+    --color:#408EC6;
+    --background-color: #408ec6;
+}
+.gold{
+    --color:#f1c232;
+    --background-color: #f1c232;
+}
+.pink{
+    --color:#c90076;
+    --background-color: #c90076;
+} 
+.purple{
+   --color:#6a329f;
+   --background-color: #6a329f;
+}
+.lavender{
+    --color:#8e7cc3;
+    --background-color:#8e7cc3;
+}
+/* Fonts */
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root 
+
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #f3f4f6;  /* The default color of the main navmenu links */
+  --nav-hover-color: #22e7a1; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #38485f; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #38485f; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #f3f4f6; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #22e7a1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #293341;
+  --surface-color: #4b607f;
+}
+
+.dark-background {
+  --background-color: #1c2737;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
